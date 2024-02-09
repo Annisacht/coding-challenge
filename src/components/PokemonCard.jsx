@@ -4,7 +4,7 @@ const PokemonCard = ({ pokemon }) => {
     const { name, imageUrl, description } = pokemon;
 
     return (
-        <div className="col-md-4">
+        <div className="col-md-4 g-3">
             <div className="card">
                 <img src={imageUrl} alt={name} className="card-img-top" />
                 <div className="card-body">
