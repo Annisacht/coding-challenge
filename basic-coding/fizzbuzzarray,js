@@ -1,0 +1,18 @@
+function fizzBuzzArrayMethod(arr) {
+    return arr.map(item => {
+        if (item % 3 === 0 && item % 5 === 0) {
+            return "fizz buzz";
+        } else if (item % 3 === 0) {
+            return "fizz";
+        } else if (item % 5 === 0) {
+            return "buzz";
+        } else {
+            return item;
+        }
+    });
+}
+
+console.log(fizzBuzzArrayMethod([8, 3, 9, 2, 5]));
+console.log(fizzBuzzArrayMethod([3, 4, 6, 7, 9]));
+console.log(fizzBuzzArrayMethod([4, 5, 9, 15, 19]));
+console.log(fizzBuzzArrayMethod([2, 4, 7, 8, 1]));  
